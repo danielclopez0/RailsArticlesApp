@@ -1,3 +1,4 @@
 class Article < ActiveRecord::Base
-  validates_presence_of :title, :text
+	has_many :comments
+	validates_presence_of :title, :text
 end
